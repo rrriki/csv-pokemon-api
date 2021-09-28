@@ -1,0 +1,208 @@
+{
+  "_type": "export",
+  "__export_format": 4,
+  "__export_date": "2021-09-27T22:09:37.824Z",
+  "__export_source": "insomnia.desktop.app:v2021.5.2",
+  "resources": [
+    {
+      "_id": "req_30efc79bda1249ff99e58d41a7cdad2a",
+      "parentId": "fld_b7c2107598f44efdbee4d76e7b8441d0",
+      "modified": 1632780148283,
+      "created": 1632778514137,
+      "url": "http://localhost:8080/pokemon/",
+      "name": "Get Pokemons",
+      "description": "",
+      "method": "GET",
+      "body": {},
+      "parameters": [
+        {
+          "id": "pair_b7c2ea94c7e54d1c9870c46f14043c83",
+          "name": "pageSize",
+          "value": "10",
+          "description": ""
+        },
+        {
+          "id": "pair_d4c7182e5afb486ba99c80b1840e1e50",
+          "name": "pageNumber",
+          "value": "1",
+          "description": ""
+        }
+      ],
+      "headers": [],
+      "authentication": {},
+      "metaSortKey": -1632594034612,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "fld_b7c2107598f44efdbee4d76e7b8441d0",
+      "parentId": "wrk_5790b3c309e34d78ad844c02fd5a1b52",
+      "modified": 1632778514132,
+      "created": 1632778514132,
+      "name": "Pokemon",
+      "description": "",
+      "environment": {},
+      "environmentPropertyOrder": null,
+      "metaSortKey": -1000000000,
+      "_type": "request_group"
+    },
+    {
+      "_id": "wrk_5790b3c309e34d78ad844c02fd5a1b52",
+      "parentId": null,
+      "modified": 1624425952529,
+      "created": 1624425952529,
+      "name": "Insomnia",
+      "description": "",
+      "scope": "collection",
+      "_type": "workspace"
+    },
+    {
+      "_id": "req_37a05b5ae8884828b3f08c963b3c5eea",
+      "parentId": "fld_b7c2107598f44efdbee4d76e7b8441d0",
+      "modified": 1632780157761,
+      "created": 1632778514143,
+      "url": "http://localhost:8080/pokemon/Xerneas",
+      "name": "Get Pokemon By Name",
+      "description": "",
+      "method": "GET",
+      "body": {},
+      "parameters": [],
+      "headers": [],
+      "authentication": {},
+      "metaSortKey": -1632594034562,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_b48d018e420549888c1af5757549466c",
+      "parentId": "fld_b7c2107598f44efdbee4d76e7b8441d0",
+      "modified": 1632780160467,
+      "created": 1632778514147,
+      "url": "http://localhost:8080/pokemon/Bulbasaur",
+      "name": "Update Pokemon By Name",
+      "description": "",
+      "method": "PUT",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n\t\"#\" : 13,\n\t\"total\": 3200,\n\t\"hp\": 150,\n\t\"attack\": 13,\n\t\"speed\": 1300,\n\t\"generation\": 89,\n\t\"isLegendary\": true\n}"
+      },
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json",
+          "id": "pair_e6ff707a074c4b049931fd568a67e49b"
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -1632594034537,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_55e052834f374bad8d7788aca3d36b05",
+      "parentId": "fld_b7c2107598f44efdbee4d76e7b8441d0",
+      "modified": 1632780136538,
+      "created": 1632778514151,
+      "url": "http://localhost:8080/pokemon",
+      "name": "Create Pokemon",
+      "description": "",
+      "method": "POST",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n\t\"#\" : 13,\n\t\"name\": \"riki\",\n\t\"type_1\": \"Fire\",\n\t\"type_2\": \"Electric\",\n\t\"total\": 3200,\n\t\"hp\": 150,\n\t\"attack\": 1300,\t\n\t\"defense\": 1300,\n\t\"sp_attack\": 1300,\n\t\"sp_defense\": 1300,\n\t\"speed\": 1300,\n\t\"generation\": 89,\n\t\"isLegendary\": true\n}"
+      },
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json",
+          "id": "pair_6bf7b46d09774579ab770d921f1acaaf"
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -1632594034512,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_f01f673cd55f40029e972eae08a44da1",
+      "parentId": "fld_b7c2107598f44efdbee4d76e7b8441d0",
+      "modified": 1632780151895,
+      "created": 1632778514154,
+      "url": "http://localhost:8080/pokemon/pikachu",
+      "name": "Delete Pokemon",
+      "description": "",
+      "method": "DELETE",
+      "body": {},
+      "parameters": [],
+      "headers": [],
+      "authentication": {},
+      "metaSortKey": -1632592659800,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "env_1d4d73ccfbbe6c09cc855d51f77ae2370f9ce9ec",
+      "parentId": "wrk_5790b3c309e34d78ad844c02fd5a1b52",
+      "modified": 1624425952582,
+      "created": 1624425952582,
+      "name": "Base Environment",
+      "data": {},
+      "dataPropertyOrder": null,
+      "color": null,
+      "isPrivate": false,
+      "metaSortKey": 1624425952582,
+      "_type": "environment"
+    },
+    {
+      "_id": "jar_1d4d73ccfbbe6c09cc855d51f77ae2370f9ce9ec",
+      "parentId": "wrk_5790b3c309e34d78ad844c02fd5a1b52",
+      "modified": 1624425952585,
+      "created": 1624425952585,
+      "name": "Default Jar",
+      "cookies": [],
+      "_type": "cookie_jar"
+    },
+    {
+      "_id": "spc_f03eb3a052004d7995bd27c03250f2f0",
+      "parentId": "wrk_5790b3c309e34d78ad844c02fd5a1b52",
+      "modified": 1624425952530,
+      "created": 1624425952530,
+      "fileName": "Insomnia",
+      "contents": "",
+      "contentType": "yaml",
+      "_type": "api_spec"
+    }
+  ]
+}

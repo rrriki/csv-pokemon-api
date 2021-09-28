@@ -1,0 +1,220 @@
+{
+  "info": {
+    "name": "Insomnia",
+    "_postman_id": "c69f316d-fbbc-41c1-b7d4-72115cfae419",
+    "description": "",
+    "schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Pokemon",
+      "description": "",
+      "item": [
+        {
+          "id": "dba673c2-60b8-41a2-a381-a3946a2c432b",
+          "name": "Get Pokemons",
+          "request": {
+            "url": {
+              "protocol": "http",
+              "host": "localhost",
+              "path": [
+                "pokemon/"
+              ],
+              "port": "8080",
+              "query": [
+                {
+                  "key": "pageSize",
+                  "value": "10",
+                  "description": "",
+                  "disabled": false
+                },
+                {
+                  "key": "pageNumber",
+                  "value": "1",
+                  "description": "",
+                  "disabled": false
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "*/*",
+                "disabled": false
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "disabled": false
+            },
+            "description": ""
+          },
+          "response": [
+            {
+              "header": [],
+              "code": 200,
+              "name": "Response_200",
+              "id": "ac4c03b6-8531-4790-8ea6-ad4e15b70ae6"
+            }
+          ]
+        },
+        {
+          "id": "63249334-eeee-4151-bdf8-e6e649488109",
+          "name": "Get Pokemon By Name",
+          "request": {
+            "url": {
+              "protocol": "http",
+              "host": "localhost",
+              "path": [
+                "pokemon/Xerneas"
+              ],
+              "port": "8080"
+            },
+            "method": "GET",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "*/*",
+                "disabled": false
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "disabled": false
+            },
+            "description": ""
+          },
+          "response": [
+            {
+              "header": [],
+              "code": 200,
+              "name": "Response_200",
+              "id": "9f498abd-3e3a-46ca-ac0d-9d374893ff0d"
+            }
+          ]
+        },
+        {
+          "id": "8c34a522-882b-47db-8db1-cd11b03e6e92",
+          "name": "Update Pokemon By Name",
+          "request": {
+            "url": {
+              "protocol": "http",
+              "host": "localhost",
+              "path": [
+                "pokemon/Bulbasaur"
+              ],
+              "port": "8080"
+            },
+            "method": "PUT",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "description": "",
+                "disabled": false
+              },
+              {
+                "key": "Accept",
+                "value": "*/*",
+                "disabled": false
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"#\": 13,\r\n  \"total\": 3200,\r\n  \"hp\": 150,\r\n  \"attack\": 13,\r\n  \"speed\": 1300,\r\n  \"generation\": 89,\r\n  \"isLegendary\": true\r\n}",
+              "disabled": false
+            },
+            "description": ""
+          },
+          "response": [
+            {
+              "header": [],
+              "code": 200,
+              "name": "Response_200",
+              "id": "cee217d0-8e4b-4fbc-b610-30ca99bd3b36"
+            }
+          ]
+        },
+        {
+          "id": "3115678c-cf01-443a-9ce4-e9373ba0f36e",
+          "name": "Create Pokemon",
+          "request": {
+            "url": {
+              "protocol": "http",
+              "host": "localhost",
+              "path": [
+                "pokemon"
+              ],
+              "port": "8080"
+            },
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "description": "",
+                "disabled": false
+              },
+              {
+                "key": "Accept",
+                "value": "*/*",
+                "disabled": false
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"#\": 13,\r\n  \"name\": \"riki\",\r\n  \"type_1\": \"Fire\",\r\n  \"type_2\": \"Electric\",\r\n  \"total\": 3200,\r\n  \"hp\": 150,\r\n  \"attack\": 1300,\r\n  \"defense\": 1300,\r\n  \"sp_attack\": 1300,\r\n  \"sp_defense\": 1300,\r\n  \"speed\": 1300,\r\n  \"generation\": 89,\r\n  \"isLegendary\": true\r\n}",
+              "disabled": false
+            },
+            "description": ""
+          },
+          "response": [
+            {
+              "header": [],
+              "code": 200,
+              "name": "Response_200",
+              "id": "0e4ad873-21aa-4cd8-b426-468b1f91acde"
+            }
+          ]
+        },
+        {
+          "id": "217cb787-9266-4dd0-92d1-b840fbdef6d1",
+          "name": "Delete Pokemon",
+          "request": {
+            "url": {
+              "protocol": "http",
+              "host": "localhost",
+              "path": [
+                "pokemon/pikachu"
+              ],
+              "port": "8080"
+            },
+            "method": "DELETE",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "*/*",
+                "disabled": false
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "disabled": false
+            },
+            "description": ""
+          },
+          "response": [
+            {
+              "header": [],
+              "code": 200,
+              "name": "Response_200",
+              "id": "b3d32497-2577-40c7-bd2e-7789cf7962a7"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "variable": []
+}
